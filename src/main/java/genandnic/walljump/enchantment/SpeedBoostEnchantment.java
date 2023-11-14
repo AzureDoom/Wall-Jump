@@ -2,6 +2,7 @@ package genandnic.walljump.enchantment;
 
 import genandnic.walljump.WallJump;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ElytraItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -37,7 +38,7 @@ public class SpeedBoostEnchantment extends Enchantment {
 
 		if (!WallJump.CONFIGURATION.enchantconfigs.enableEnchantments)
 			return false;
-
-		return stack.isEnchantable() || stack.getItem() instanceof ElytraItem;
+		
+		return stack.isEnchantable() && (stack.getItem() instanceof ElytraItem || stack.getItem() instanceof ArmorItem);
 	}
 }
