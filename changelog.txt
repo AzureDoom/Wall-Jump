@@ -1,3 +1,3 @@
-v1.4.2b
+v1.4.4
 
-- Updates bundled AzureLib version to latest.
+- Fixes Enchantments applying non-armor items.
