@@ -36,8 +36,8 @@ dependencies {
     include "org.aeonbits.owner:owner:${project.ownerVersion}" 
     modImplementation "maven.modrinth:keybind-fix:1.0.0"
     include "maven.modrinth:keybind-fix:1.0.0"
-    modImplementation "maven.modrinth:fabric-language-kotlin:1.10.10+kotlin.1.9.10"
-    include "maven.modrinth:fabric-language-kotlin:1.10.10+kotlin.1.9.10"
+    modImplementation("net.fabricmc:fabric-language-kotlin:1.10.10+kotlin.1.9.10")
+    include "net.fabricmc:fabric-language-kotlin:1.10.10+kotlin.1.9.10"
     modImplementation "mod.azure.azurelib:azurelib-fabric-${project.minecraftVersion}:${project.azurelibVersion}"
     include "mod.azure.azurelib:azurelib-fabric-${project.minecraftVersion}:${project.azurelibVersion}"
 	modCompileOnly "com.terraformersmc:modmenu:${project.modmenuVersion}"
